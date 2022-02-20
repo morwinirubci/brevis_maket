@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brevis maket</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="http://fonts.cdnfonts.com/css/neuropol-2" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<845b0b2f-a51e-47e7-a749-268ccccbc952>&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header_wrapper" id="header_link">
+            <div class="logo_header">
+                <img src="img/logo.png">
+            </div>
+            <div class="wrap_header_info">
+                <div class="header_info">
+                    <p class="address_header_item"><img src="img/icon_location.png" alt="Location">г. Москва, ул. Василия Петушкова, дом 3, корпус 3</p>
+                    <a href="" class="email_header_item"><img src="img/email_icon.png">vostok-g.msk@yandex.ru</a>
+                </div>
+                <div class="header_info_last">
+                    <p class="clock_header_item"><img src="img/clock_icon.png">По будням: с 09-00 до 18-00</p>
+                    <p class="phone_header_item"><img src="img/phone_icon.png">+7 (915) 052-11-22</p>
+                </div>
+                <nav>
+                    <ul class="header_list_items">
+                        <li class="header_list_item">Наши услуги</li>
+                        <li class="header_list_item">Наши цены</li>
+                        <li class="header_list_item">Преимущества</li>
+                        <li class="header_list_item_last">Контакты</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="menu_wrapper">
+            <div class="menu_items">
+                <h1 class="menu_title">Бесплатная диагностика!</h1>
+                <p class="menu_subtitle">При проведении ремонта топливной аппаратуры в нашем техническом центре входная <span class="span_subtitle">диагностика бесплатно.</span></p>
+            </div>
+            <div class="menu_form">
+                <h2 class="form_title">Оставить заявку</h2>
+                <input class="form_item" type="text" placeholder="Имя">
+                <input class="form_item" type="text" placeholder="Телефон/E-mail">
+                <button class="form_item btn_menu">Отправить заявку на ремонт</button>
+                <p class="menu_low_items">
+                    <label class="checkbox_label">
+                        <input class="form_check" type="checkbox">
+                        <span class="new_checkbox"></span>
+                        Отправкой данной формы я подтверждаю своё согласие
+                    </label>
+                    <a class="menu_form_link" href=""> на обработку моих данных</a>
+                </p>
+            </div>
+        </div>
+            <div class="menu_down_items">
+                <div class="menu_down_item">
+                    <img src="img/maintenance_icon.png">
+                    <p class="menu_down_item_text">Огромный опыт ремонта</p>
+                </div>
+                <div class="menu_down_item">
+                    <img src="img/car-engine_icon.png">
+                    <p class="menu_down_item_text">Работаем с любыми дизельными двигателями</p>
+                </div>
+                <div class="menu_down_item">
+                    <img src="img/price_icon.png">
+                    <p class="menu_down_item_text">Приемлемые цены для каждого</p>
+                </div>
+            </div>
+        <section class="sale_item">
+            <div class="sale_items">
+                <div class="info_sale_item">
+                    <h2 class="sale_title">Скидка 10% </h2>
+                    <p class="sale_subtitle">на услуги при заказе с сайта до 15 октября 2021 г.</p>
+                </div>
+                <div class="sale_form_items">
+                    <h3 class="sale_form_title">Оставьте контакты до 15 октября</h3>
+                    <p class="sale_form_subtitle">и запишитесь на услугу со скидкой</p>
+                    <input class="sale_form_item" type="text" placeholder="Ваше имя">
+                    <input class="sale_form_item" type="tel" placeholder="+7 (499) 00-00-000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                           required>
+                    <button class="sale_form_btn">Отправить</button>
+                </div>
+            </div>
+        </section>
+        <section class="catalog_wrapper">
+            <h2 class="catalog_head">Каталог услуг </h2>
+            <div class="catalog_items">
+                <div class="wrap_catalog">
+                    <div class="catalog_item">
+                        <img src="img/catalog_item_1.png">
+                        <h4 class="catalog_item_title">Ремонт инжекторов CR</h4>
+                        <p class="catalog_item_subtitle">Точная диагностика дилерским оборудованием и выявление неисправности без лишних затрат.</p>
+                        <p class="catalog_item_price">от 1 000 руб.</p>
+                        <button class="catalog_item_btn">Оставить заявку</button>
+                    </div>
+                    <div class="catalog_item">
+                        <img src="img/catalog_item_2.png">
+                        <h4 class="catalog_item_title">Ремонт ТНВД CR</h4>
+                        <p class="catalog_item_subtitle">Обслуживание и ремонт топливных систем с насос-форсунками и индивидуальными секциями.</p>
+                        <p class="catalog_item_price">от 1 000 руб.</p>
+                        <button class="catalog_item_btn">Оставить заявку</button>
+                    </div>
+                    <div class="catalog_item">
+                        <img src="img/catalog_item_3.png">
+                        <h4 class="catalog_item_title">Кодирование инжекторов CR</h4>
+                        <p class="catalog_item_subtitle">Диагностика и ремонт всех типов топливной аппаратуры в кратчайшие сроки!!!</p>
+                        <p class="catalog_item_price">от 1 000 руб.</p>
+                        <button class="catalog_item_btn">Оставить заявку</button>
+                    </div>
+                </div>
+                <div class="wrap_catalog wrap_catalog_last">
+                    <div class="catalog_item">
+                        <img src="img/catalog_item_4.png">
+                        <h4 class="catalog_item_title">Ремонт механических ТНВД</h4>
+                        <p class="catalog_item_subtitle">Мы предлагаем установку и продажу сепараторов для всех видов техники.Что позволит Вам защитить свою топливную систему</p>
+                        <p class="catalog_item_price">от 1 000 руб.</p>
+                        <button class="catalog_item_btn">Оставить заявку</button>
+                    </div>
+                    <div class="catalog_item">
+                        <img src="img/catalog_item_5.png">
+                        <h4 class="catalog_item_title">Ремонт механических форсунок</h4>
+                        <p class="catalog_item_subtitle">Наша компания предлагает продажу запасных частей и топливных присадок для Вашего автомобиля.</p>
+                        <p class="catalog_item_price">от 1 000 руб.</p>
+                        <button class="catalog_item_btn">Оставить заявку</button>
+                    </div>
+                    <div class="catalog_item">
+                        <img src="img/catalog_item_6.png">
+                        <h4 class="catalog_item_title">Ремонт ТНВД EDC</h4>
+                        <p class="catalog_item_subtitle">Диагностика и ремонт всех типов топливной аппаратуры в кратчайшие сроки!!!</p>
+                        <p class="catalog_item_price">от 1 000 руб.</p>
+                        <button class="catalog_item_btn">Оставить заявку</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu_benefits">
+            <h2 class="benefits_head">Наши преимущества</h2>
+            <div class="menu_benefits_items">
+                <div class="benefits_item benefits_item_first">
+                    <img class="img_benefits" src="img/benefits_item_1.png">
+                    <h4 class="benefits_item_title">Опыт</h4>
+                    <p class="benefits_item_subtitle">Опыт работы более 15 лет!</p>
+                </div>
+                <div class="benefits_item">
+                    <img class="img_benefits"  src="img/benefits_item_2.png">
+                    <h4 class="benefits_item_title">Бесплатно</h4>
+                    <p class="benefits_item_subtitle">Бесплатная диагностика при проведении ремонта!</p>
+                </div>
+                <div class="benefits_item">
+                    <img class="img_benefits"  src="img/benefits_item_3.png">
+                    <h4 class="benefits_item_title">Система скидок</h4>
+                    <p class="benefits_item_subtitle">Индивидуальный подход к каждому клиенту дает возможность вести гибкую систему скидок!</p>
+                </div>
+                <div class="benefits_item">
+                    <img class="img_benefits"  src="img/benefits_item_4.png">
+                    <h4 class="benefits_item_title">Точные сроки</h4>
+                    <p class="benefits_item_subtitle">Мы ценим время клиента, поэтому соблюдаем сроки согласованные при обращении</p>
+                </div>
+                <div class="benefits_item">
+                    <img class="img_benefits"  src="img/benefits_item_5.png">
+                    <h4 class="benefits_item_title">Запасные части</h4>
+                    <p class="benefits_item_subtitle">Применяем только оригинальные запасные части от мировых производителей.</p>
+                </div>
+            </div>
+        </section>
+        <section class="menu_price">
+            <h2 class="price_header">Цены</h2>
+            <div class="price_items">
+                <table class="price_tbl">
+                    <tr class="price_tbl_row">
+                        <td>Диагностика инжекторов</td><td>от 600 руб.</td><td class="last_td"><button class="price_tbl_btn">Оставить заявку</button></td>
+                    </tr>
+                    <tr class="price_tbl_row">
+                        <td>Ремонт инжекторов</td><td>от 300 руб.</td><td  class="last_td " ><button class="price_tbl_btn">Оставить заявку</button></td>
+                    </tr>
+                    <tr class="price_tbl_row">
+                        <td>Присвоение кода	</td><td>1500 руб.</td><td class="last_td "><button class="price_tbl_btn">Оставить заявку</button></td>
+                    </tr>
+                    <tr class="price_tbl_row">
+                        <td>Диагностика инжекторов	</td><td>от 600 руб.</td><td class="last_td "><button class="price_tbl_btn">Оставить заявку</button></td>
+                    </tr>
+                    <tr class="price_tbl_row">
+                        <td>Ремонт инжекторов	</td><td>от 300 руб.</td><td class="last_td "><button class="price_tbl_btn">Оставить заявку</button></td>
+                    </tr>
+                    <tr class="price_tbl_row">
+                        <td>Присвоение кода	</td><td>1500 руб.</td><td class="last_td "><button class="price_tbl_btn">Оставить заявку</button></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="about_com">
+            <div class="about_com_items">
+                <h2 class="about_head">О компании</h2>
+                <p class="about_subtitle">Наша компания ООО "ВОСТОК ГРУПП" находится более 15 на рынке услуг по ремонту дизельной аппаратуры. В этом году мы получили авторизацию от компании DELPHI, по  ремонту и кодированию инжекторов системы COMMON RAIL. В связи с чем мы рады пригласить к сотрудничеству представителей и официальных дилеров всех марок автомобилей, оснащенных топливной системой Common Rail  DELPHI. А так же все технические центры и станции технического обслуживания которые занимаются ремонтом дизельных топливных систем. Заключаем договора на долгосрочное обслуживание. Действует гибкая система скидок!</p>
+            </div>
+        </section>
+        <section class="center_photo">
+            <h2 class="center_photo_head">Фото нашего центра</h2>
+            <div class="center_photo_items">
+                <div class="center_photo_wrap">
+                    <div class="center_photo_item">
+                        <img src="img/pcenter_1.png">
+                    </div>
+                    <div class="center_photo_item">
+                        <img src="img/pcenter_2.png">
+                    </div>
+                    <div class="center_photo_item">
+                        <img src="img/pcenter_3.png">
+                    </div>
+                </div>
+                <div class="center_photo_wrap">
+                    <div class="center_photo_item">
+                        <img src="img/pcenter_3.png">
+                    </div>
+                    <div class="center_photo_item">
+                        <img src="img/pcenter_1.png">
+                    </div>
+                    <div class="center_photo_item">
+                        <img src="img/pcenter_2.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partners">
+            <h2 class="partners_head">Наши партнеры</h2>
+            <div class="slider partners_items">
+                <div class="partners_img_items"><img src="img/partners_1.png"></div>
+                <div class="partners_img_items" ><img src="img/partners_2.png"></div>
+                <div class="partners_img_items" ><img src="img/partners_3.png"></div>
+                <div class="partners_img_items" ><img src="img/partners_4.png"></div>
+                <div class="partners_img_items" ><img src="img/partners_5.png"></div>
+                <div class="partners_img_items" ><img src="img/partners_6.png"></div>
+                <div class="partners_img_items" ><img src="img/partners_7.png"></div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="wrap_contacts">
+                <h2 class="contacts_head">Контакты</h2>
+                <div class="contacts_items">
+                    <div class="contacts_info">
+                        <p class="clock_contacts_item"><img src="img/clock_icon.png">По будням: с 09-00 до 18-00</p>
+                        <p class="phone_contacts_item"><img src="img/phone_icon.png">+7 (915) 052-11-22</p>
+                    </div>
+                    <div class="contacts_info_last">
+                        <p class="address_contacts_item"><img src="img/icon_location.png" alt="Location">г. Москва, ул. Василия Петушкова, дом 3, корпус 3</p>
+                        <a href="" class="email_contacts_item"><img src="img/email_icon.png">vostok-g.msk@yandex.ru</a>
+                    </div>
+                </div>
+            </div>
+            <div class="map_items">
+                <div id="map"></div>
+                <p class="up_header"><a href="#header_link" id="link_up">Наверх</a></p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer_wrap">
+        <div class="footer_items">
+            <div class="footer_logo">
+                <img src="img/logo.png">
+            </div>
+            <div class="foot_list first_list">
+                <p class="foot_list_item"><img src="img/mec.png">Наши услуги</p>
+                <p class="foot_list_item"><img src="img/mec.png">Наши цены</p>
+                <p class="foot_list_item"><img src="img/mec.png">Преимущества</p>
+                <p class="foot_list_item"><img src="img/mec.png">Контакты</p>
+            </div>
+            <div class="foot_list">
+                <p class="foot_list_item"><img src="img/mec.png">Ремонт инжекторов CR</p>
+                <p class="foot_list_item"><img src="img/mec.png">Ремонт ТНВД CR</p>
+                <p class="foot_list_item"><img src="img/mec.png">Кодирование инжекторов CR</p>
+                <p class="foot_list_item"><img src="img/mec.png">Ремонт механических ТНВД</p>
+                <p class="foot_list_item"><img src="img/mec.png">Ремонт механических форсунок</p>
+                <p class="foot_list_item"><img src="img/mec.png">Ремонт ТНВД EDC</p>
+            </div>
+            <div class="foot_list last_list">
+                <img src="">
+                <p class="info_brevis"> <img src="img/brevis.png"> Разработка корпоративного сайта <a class="foot_link" href="https://www.brevis-site.ru/">интернет-агентство BREVIS</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+</body>
+</html>

@@ -1,0 +1,662 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-width: 1170px;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    background: url("../img/phone_body.png") no-repeat;
+}
+.header_wrapper{
+    padding-top: 15px;
+    margin: auto;
+    max-width: 1170px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 172px;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrap_header_info {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+.header_info{
+    margin-right: auto;
+}
+.address_header_item,.clock_header_item,.clock_contacts_item,.address_contacts_item{
+    margin-bottom: 16px;
+    color: rgba(58, 58, 58, 0.78);
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+.email_header_item,.email_header_item:active,.email_contacts_item,.email_contacts_item:active {
+    color: rgb(8,132,142);
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+.phone_header_item,.phone_contacts_item{
+    color: rgb(50, 50, 50);
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+.header_info img, .header_info_last img{
+    margin-right: 14px;
+}
+.header_list_items{
+    display: flex;
+    margin-top: 20px;
+    list-style: none;
+    min-width: 100%;
+}
+.header_list_items li{
+    padding: 20px 49px;
+    font-size: 14px;
+    color: rgb(53, 53, 53);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    position: relative;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.header_list_items li:hover{
+    color: white;
+    background: rgb(8,132,142);
+}
+.header_list_item::after{
+    position: absolute;
+    content: "";
+    border-right: 1px solid black;
+    padding-right: inherit;
+    min-height: 30%;
+}
+.header_list_item::after{
+    position: absolute;
+    content: "";
+    border-right: 1px solid black;
+    padding-right: inherit;
+    min-height: 30%;
+}
+.menu_wrapper{
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.menu_title{
+    font-size: 60px;
+    color: rgb(57, 68, 79);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 43px;
+}
+.menu_subtitle{
+    font-size: 24px;
+    color: rgb(25, 24, 24);
+    line-height: 1.2;
+    text-align: left;
+    font-weight: 600;
+    max-width: 500px;
+}
+.span_subtitle{
+    color: rgb(253,111,103);
+}
+.menu_form{
+    border:3px solid rgb(149, 149, 149);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.73);
+    box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.3);
+    min-height: 379px;
+    max-width: 413px;
+    position: relative;
+    opacity: 0.9;
+    padding: 37px 30px;
+    margin-bottom: 125px;
+}
+.menu_form::after{
+    content: "";
+    position: absolute;
+    background: url("../img/form_img.png") no-repeat;
+    min-width: 157px;
+    min-height: 192px;
+    right:80%;
+    bottom:65%;
+    z-index: -1;
+}
+.form_title{
+    text-align: right;
+    font-size: 32px;
+    color: #060607;
+    line-height: 1.2;
+    position: relative;
+    margin-bottom: 40px;
+}
+.form_item{
+    min-width: 100%;
+    min-height: 48px;
+    border: 1px solid #959595FF;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+    font-family: inherit;
+}
+.btn_menu{
+    color:white;
+    background: rgb(8,132,142);
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    font-family: inherit;
+    border:none;
+}
+.btn_menu:hover,.sale_form_btn:hover,.catalog_item_btn:hover,#link_up:hover{
+    opacity: 0.8;
+}
+.menu_low_items{
+    max-width: 315px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Roboto",sans-serif;
+    line-height: 1.2;
+    margin: auto;
+}
+.form_check{
+    float: left;
+    margin-right: 16px;
+    min-width: 20px;
+    min-height: 20px;
+    background-color: rgb(8,132,142);
+}
+.checkbox_label input{
+    display: none;
+}
+.checkbox_label span{
+    min-height: 20px;
+    min-width: 20px;
+    border: 1px solid gray;
+    display: inline-block;
+    position: relative;
+    background-color:#FFF;
+    float: left;
+}
+[type=checkbox]:checked + span::before {
+    content: '\2714';
+    position: absolute;
+    padding: 0 3px;
+    left: 0;
+    font-size:15px;
+    color:white;
+    background-color: rgb(8,132,142)
+}
+.menu_form_link{
+    color:rgb(8,132,142);
+}
+.menu_down_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1170px;
+    margin: auto;
+}
+.menu_down_item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    max-width: 350px;
+    margin-bottom: 40px;
+}
+.menu_down_item::before{
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    min-width: 87px;
+    min-height: 87px;
+    left:-20px;
+    background: linear-gradient(to right, rgba(128, 128, 128, 0.19), white);
+    z-index: -1;
+}
+.menu_down_item_text{
+    font-size: 18px;
+    color: #242424;
+    line-height: 1.2;
+    margin-left: 20px;
+    font-weight: 700;
+}
+.sale_item{
+    background: url("../img/phone_body.png") no-repeat center;
+    background-size: cover;
+    padding: 45px 0 45px 0;
+    margin-bottom: 45px;
+}
+.sale_items{
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 5px solid transparent;
+    border-image: 1 linear-gradient(to bottom ,white 10%,  transparent 20%, transparent 70%, white 90%);
+    min-height: 330px;
+
+}
+.info_sale_item{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+.info_sale_item::before{
+    position: absolute;
+    content: "";
+    background: url("../img/discount_icon.png") no-repeat;
+    left:-15%;
+    opacity: 0.9;
+    top:0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.sale_title{
+    color: rgb(253,111,103);
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.sale_subtitle{
+    font-size: 32px;
+    font-family: "Myriad Pro",sans-serif;
+    color: rgb(46, 46, 46);
+    line-height: 1.2;
+    max-width: 460px;
+}
+.sale_form_items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+.sale_form_title{
+    font-size: 24px;
+    color: rgb(29, 29, 29);
+    line-height: 1.25;
+    text-align: center;
+}
+.sale_form_subtitle{
+    font-size: 18px;
+    color: rgb(29, 29, 29);
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sale_form_item{
+    min-width: 500px;
+    min-height: 50px;
+    border: 1px solid #959595FF;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+    font-family: inherit;
+}
+.sale_form_btn{
+    width: 360px;
+    height: 50px;
+    color:white;
+    border:none;
+    background: rgb(8,132,142);
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    border-radius: 5px;
+}
+.catalog_head,.benefits_head,.price_header,.about_head,.center_photo_head,.partners_head,.contacts_head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 85px;
+    position: relative;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(25, 25, 25);
+    line-height: 1.2;
+}
+.catalog_head::before,.benefits_head::before,.price_header::before,.about_head::before,.center_photo_head::before,.partners_head::before,.contacts_head::before{
+    content: "";
+    background: url("../img/logo_catalog.png") no-repeat;
+    min-width: 190px;
+    margin-top: 150px;
+    height: 50px ;
+    position: absolute;
+}
+
+.wrap_catalog{
+    max-width:1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.catalog_item{
+    max-width: 355px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px 1px rgba(128, 128, 128, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.catalog_item img{
+    margin-bottom: 25px;
+}
+.catalog_item_title{
+    font-size: 18px;
+    color: rgb(42, 42, 42);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 33px;
+}
+.catalog_item_subtitle{
+    font-size: 15px;
+    color: rgb(55, 53, 53);
+    line-height: 1.2;
+    text-align: center;
+    max-width: 280px;
+    margin-bottom: 35px;
+}
+.catalog_item_price{
+    color: rgb(253,111,103);
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.catalog_item_btn{
+    min-width: 260px;
+    height: 50px;
+    color:white;
+    border:none;
+    background: rgb(8,132,142);
+    font-size: 18px;
+    line-height: 1.2;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.wrap_catalog_last{
+    margin-bottom: 100px;
+}
+.menu_benefits {
+    background: url("../img/phone_3.png");
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+}
+
+.benefits_head{
+    margin-bottom: 150px;
+}
+.menu_benefits_items{
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+.benefits_item {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+.benefits_item img{
+    margin-bottom: 25px;
+}
+.benefits_item_title{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+    min-width: 50px;
+}
+.benefits_item_subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+}
+.benefits_item img{
+    margin-bottom: 28px;
+}
+.menu_price{
+    max-width: 1170px;
+    margin: auto;
+}
+.price_header{
+    margin-bottom: 100px;
+}
+.price_tbl{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgba(128, 128, 128, 0.15);
+}
+.price_tbl_row td{
+    border-top: 1px solid rgba(128, 128, 128, 0.15);
+    padding: 5px 20px;
+    font-size: 14px;
+    color: rgb(32, 31, 31);
+    line-height: 1.2;
+    text-align: left;
+    font-family: inherit;
+    font-weight: 700;
+}
+.price_tbl_row:hover{
+    background: rgb(247,247,247);
+}
+.price_items{
+    margin-bottom: 100px;
+}
+.price_tbl_btn{
+    max-height: 50px;
+    min-width: 230px;
+    border: 2px solid rgb(8,132,142);
+    color:rgb(8,132,142);
+    padding: 10px 20px;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 14px;
+    background: white;
+    margin: 5px;
+    text-align: center;
+    border-radius: 3px;
+}
+.price_tbl_btn:hover{
+    background: rgb(8,132,142);
+    color: white;
+}
+.last_td{
+    max-width: 100px;
+}
+.about_com_items{
+    max-width: 1170px;
+    margin: auto;
+}
+.about_head{
+    margin: 100px;
+}
+.about_subtitle{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Myriad Pro",sans-serif;
+    color: rgba(50, 50, 50, 0.65);
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 68px;
+}
+.center_photo{
+    background: url("../img/phone_4.png") no-repeat;
+}
+.center_photo_items{
+    padding-bottom: 70px;
+    margin-bottom: 70px;
+}
+.center_photo_wrap{
+    display: flex;
+    max-width: 1170px;
+    margin: auto;
+}
+.center_photo_item{
+    width: 33%;
+    height: 242px;
+    z-index: 0;
+}
+.center_photo_item:hover{
+    z-index: 5;
+    opacity: 0.9;
+    transform: scale(1.1);
+    filter: sepia(1) hue-rotate(320deg) saturate(4);
+}
+.partners{
+    max-width: 1170px;
+    margin: auto;
+    margin-bottom: 115px;
+}
+.partners_head{
+    margin-bottom: 100px;
+}
+.partners_items{
+    margin-bottom: 100px;
+}
+.partners_img_items img{
+    box-shadow: 0 0 10px 1px rgba(128, 128, 128, 0.2);
+    max-width: 200px;
+    max-height: 100px;
+    background: white;
+    padding: 15px;
+}
+
+#map{
+    min-height:480px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+}
+.up_header{
+    display: flex;
+    justify-content: flex-end;
+
+}
+#link_up{
+    max-width: 200px;
+    color:white;
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 30px;
+    background-color: rgb(8,132,142);
+    margin-top: 200px;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1.875;
+}
+
+.contacts{
+    margin: auto;
+    position: relative;
+    max-height: 215px;
+    z-index: 5;
+}
+.wrap_contacts{
+    margin: auto;
+    max-width: 1170px;
+    position: relative;
+    z-index: 5;
+    padding-bottom: 15px;
+}
+.wrap_contacts::before{
+    z-index: -1;
+    background: white;
+    opacity: 0.8;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    margin: inherit;
+}
+.contacts_head{
+}
+.contacts_items{
+    display: flex;
+    justify-content: center;
+    max-width: 1170px;
+    margin: auto;
+    margin-bottom: 35px;
+}
+.contacts_info{
+    margin-right: 150px;
+}
+.contacts_info img,.contacts_info_last img{
+    margin-right: 10px;
+}
+.clock_contacts_item,.address_contacts_item{
+    margin-bottom: 25px;
+}
+.footer_wrap{
+    margin: auto;
+    margin-top: 300px;
+    max-width: 1170px;
+}
+.footer_items{
+    display: flex;
+    margin-bottom: 60px;
+    align-items: flex-start;
+}
+.footer_logo{
+    margin-right: 100px;
+}
+.foot_list{
+    margin-right: 50px;
+    max-width: 270px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: inherit;
+    color: rgb(48, 48, 48);
+    line-height: 2.143;
+    text-align: left;
+}
+.foot_list img{
+    margin-right: 8px;
+}
+.last_list{
+    display: flex;
+
+}
+.info_brevis img{
+    float: left;
+}
+.foot_link{
+    color: rgb(8,132,142);
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 600;
+}
